@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yang Jinghan 的作品集</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        background-color: rgba(33, 33, 33, 1.00);
+        color: #6C6E85;
+        margin: 0px;
+    }
+
+    li {
+        float: left;
+    }
+
+    .titleList:after {
+        /*伪元素是行内元素 正常浏览器清除浮动方法*/
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .titleList {
+        *zoom: 1;
+        /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    hr {
+        height: 1px;
+        background-color: #6C6E85;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    h1 {
+        margin: auto;
+    }
+
+    .titleList {
+        list-style: none;
+    }
+
+    .titleList img {
+        width: 80px;
+        border-radius: 50%;
+        border: 5px solid #6C6E85;
+        vertical-align: middle;
+    }
+
+    .titleList span {
+        display: inline-block;
+        background-color: #3c4155;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 50%;
+    }
+
+    .titleList li {
+        width: 200px;
+        border: 1px solid #2E324B;
+        padding: 20px 10px;
+        transition: border .5s ease-in;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .titleList li:hover {
+        border-color: aqua;
+        box-shadow: 0px 0px 3px 0px red;
+    }
+
+    .titleList li p {
+        width: 100%;
+    }
+
+    .box {
+        width: 80%;
+        height: 700px;
+        margin: 0 auto;
+    }
+
+    h3 {
+        margin: 5px 5px;
+    }
+
+    .box {
+        position: relative;
+    }
+
+    .box .button {
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        top: 20%;
+        transition: transform .3s ease;
+    }
+
+    .box .button:hover {
+        transform: scale(1.5);
+    }
+
+    .button.l {
+        left: -100px;
+    }
+
+    .button.r {
+        right: -100px;
+    }
+
+    .text span:hover {
+        background-color: orangered;
+        color: white;
+    }
+</style>
+
+<body>
+    <div>
+        <h1>视频作品集</h1>
+        <hr>
+        <marquee behavior="" scrollamount="18" direction="" onmouseover="this.stop()" onmouseout="this.start()">
+            <ul class="titleList">
+                <li>
+                    <a target="iframe" href="./video/con1.html">
+                        <div class="text">
+                            <img src="./senke_xy05.jpg" alt="">
+                            <h3>梦里梦见梦中的你</h3>
+                            <hr>
+                            <p>Yang Jinghan</p>
+                            <span>></span>
+                        </div>
+                    </a>
+                </li>
+                                <li>
+                    <a target="iframe" href="./video/con5.html">
+                        <div class="text">
+                            <img src="./senke_xy05.jpg" alt="">
+                            <h3>月 是故乡明</h3>
+                            <hr>
+                            <p>Yang Jinghan</p>
+                            <span>></span>
+                        </div>
+                    </a>
+                </li>
+                                <li>
+                    <a target="iframe" href="./video/con6.html">
+                        <div class="text">
+                            <img src="./senke_xy05.jpg" alt="">
+                            <h3>离二障云</h3>
+                            <hr>
+                            <p>Yang Jinghan</p>
+                            <span>></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a target="iframe" href="./video/con2.html">
+                        <div class="text">
+                            <img src="./senke_xy01.jpg" alt="">
+                            <h3>市州行·湘潭站</h3>
+                            <hr>
+                            <p>第九届中国国际食品餐饮博览会</p>
+                            <span>></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a target="iframe" href="./video/con3.html">
+                        <div class="text">
+                            <img src="./senke_xy00.jpg" alt="">
+                            <h3>市州行·湘潭站 首日开展</h3>
+                            <hr>
+                            <p>第九届中国国际食品餐饮博览会</p>
+                            <span>></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a target="iframe" href="./video/con4.html">
+                        <div class="text">
+                            <img src="./senke_xy02.jpg" alt="">
+                            <h3>市州行·湘潭站 即将开幕</h3>
+                            <hr>
+                            <p>第九届中国国际食品餐饮博览会</p>
+                            <span>></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </marquee>
+        <hr>
+        <div class="box">
+            <iframe name="iframe" src="video/con1.html" frameborder="0"></iframe>
+            <img class="button l" src="./video/qianxleft.png" alt="">
+            <img class="button r" src="./video/qianxr.png" alt="">
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
